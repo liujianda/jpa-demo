@@ -1,0 +1,20 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{title}"></title>
+</head>
+<body>
+   <h4>这是一个测试：</h4>
+   <p>1、猪猪爱你吗？</p>
+    <span th:if="${flag1}">肯定爱啊</span>
+    <span th:if="${flag2}">估计不呢</span>
+    <p>2、猪猪喜欢吃什么水果呢？</p>
+    <div th:switch="${text1}">
+        <p th:case="${text1}">山竹</p>
+        <p th:case="${text2}">奇异果</p>
+    </div>
+   <p>其实猪猪两个都喜欢啊</p>
+</body>
+</html>
